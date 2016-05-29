@@ -69,7 +69,7 @@ shinyServer(
 		installs_B <- as.numeric(input$installs_B)
 		
 		if(is.na(beta1)|is.na(beta2)|is.na(clicks_A)|is.na(clicks_B)|is.na(installs_A)|is.na(installs_B)){
-			graph <- data.frame()
+			graph <- NA
 			} else {
 			ver.A.beta1 <- beta1+installs_A
 			ver.A.beta2 <- beta2+(clicks_A-installs_A)
